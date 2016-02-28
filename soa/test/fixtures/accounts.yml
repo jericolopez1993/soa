@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_client: 1
+  yr: 1
+  mon: 1
+  day: 1
+  po: 1
+  re: 1
+  sold: 1
+  price: 9.99
+  tamount: 9.99
+  tcash: 9.99
+  bal: 9.99
+  paid: 1
+  rsnum: MyString
+  prnum: MyString
+  addbal: 1
+
+two:
+  id_client: 1
+  yr: 1
+  mon: 1
+  day: 1
+  po: 1
+  re: 1
+  sold: 1
+  price: 9.99
+  tamount: 9.99
+  tcash: 9.99
+  bal: 9.99
+  paid: 1
+  rsnum: MyString
+  prnum: MyString
+  addbal: 1

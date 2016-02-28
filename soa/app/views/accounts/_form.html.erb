@@ -1,0 +1,77 @@
+<%= form_for(@account) do |f| %>
+  <% if @account.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@account.errors.count, "error") %> prohibited this account from being saved:</h2>
+
+      <ul>
+      <% @account.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id_client %><br>
+    <%= f.number_field :id_client %>
+  </div>
+  <div class="field">
+    <%= f.label :yr %><br>
+    <%= f.number_field :yr %>
+  </div>
+  <div class="field">
+    <%= f.label :mon %><br>
+    <%= f.number_field :mon %>
+  </div>
+  <div class="field">
+    <%= f.label :day %><br>
+    <%= f.number_field :day %>
+  </div>
+  <div class="field">
+    <%= f.label :po %><br>
+    <%= f.number_field :po %>
+  </div>
+  <div class="field">
+    <%= f.label :re %><br>
+    <%= f.number_field :re %>
+  </div>
+  <div class="field">
+    <%= f.label :sold %><br>
+    <%= f.number_field :sold %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :tamount %><br>
+    <%= f.text_field :tamount %>
+  </div>
+  <div class="field">
+    <%= f.label :tcash %><br>
+    <%= f.text_field :tcash %>
+  </div>
+  <div class="field">
+    <%= f.label :bal %><br>
+    <%= f.text_field :bal %>
+  </div>
+  <div class="field">
+    <%= f.label :paid %><br>
+    <%= f.number_field :paid %>
+  </div>
+  <div class="field">
+    <%= f.label :rsnum %><br>
+    <%= f.text_field :rsnum %>
+  </div>
+  <div class="field">
+    <%= f.label :prnum %><br>
+    <%= f.text_field :prnum %>
+  </div>
+  <div class="field">
+    <%= f.label :addbal %><br>
+    <%= f.number_field :addbal %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
